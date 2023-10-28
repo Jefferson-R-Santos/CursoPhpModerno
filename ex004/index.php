@@ -31,7 +31,31 @@
     // o correto seria 
     // echo "$nom \"Minotauro\" $snom";
     
-    //gitcriado
+    //Heredoc
+    // Não funcionara no formato HTML
+    // $canal = "CursoEmVideo";
+    // $ano = date('Y');
+
+    // echo <<< TESTE
+    // Estou relembrando meus aprendizados em PHP e aprendendo mais sobre as ultimas atualizações do PHP com o $canal
+    //                               no ano de $ano
+    //     excelente professor o
+    //                           Gustavo Guanabara
+
+    // TESTE; interpretara as variaveis
+
+    //Nowdoc
+    // Não funcionara no formato HTML
+    // $canal = "CursoEmVideo";
+    // $ano = date('Y');
+
+    // echo <<< 'TESTE'
+    // Estou relembrando meus aprendizados em PHP e aprendendo mais sobre as ultimas atualizações do PHP com o $canal
+    //                               no ano de $ano
+    //     excelente professor o
+    //                           Gustavo Guanabara
+
+    // TESTE; Não interpretara as variaveis pois contem aspas simples
 
     ?>
 </body>
