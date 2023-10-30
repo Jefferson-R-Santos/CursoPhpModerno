@@ -12,7 +12,13 @@
     </header>
     <main>
         <?php 
-        var_dump($_GET);
+        //var_dump($_GET); // Super Variavel Global $_GET, $_POST, $_COOKIES
+        // A $_REQUEST é uma junção das 3 citadas acima
+
+    $nome = $_GET["nome"];
+    $sobrenome = $_GET["sobrenome"];
+    
+    echo "é um prazer te conhecer $nome $sobrenome, esté é o meu site. "
         ?>
     </main>
 </body>
