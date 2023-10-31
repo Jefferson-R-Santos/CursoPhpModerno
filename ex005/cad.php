@@ -15,11 +15,15 @@
         //var_dump($_GET); // Super Variavel Global $_GET, $_POST, $_COOKIES
         // A $_REQUEST é uma junção das 3 citadas acima
 
-    $nome = $_GET["nome"];
-    $sobrenome = $_GET["sobrenome"];
+    $nome = $_GET["nome"] ?? "Nome não informado ";
+    $sobrenome = $_GET["sobrenome"] ?? "Desconhecido" ;
     
-    echo "é um prazer te conhecer $nome $sobrenome, esté é o meu site. "
+    echo "é um prazer te conhecer <strong> $nome $sobrenome </strong>, esté é o meu site. "
+
         ?>
+
+    <p><a href="javascript:history.go(-1)">Voltar</a></p>
+
     </main>
 </body>
 </html>
