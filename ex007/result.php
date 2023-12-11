@@ -15,7 +15,7 @@ $nale = random_int(1,100);
 
 echo "Gerando um numero aleatorio entre 1 e 100...";
 
-echo "O valor gerado foi "
+echo "O valor gerado foi $nale"
 
 ?>
 
