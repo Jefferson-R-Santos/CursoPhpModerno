@@ -26,9 +26,9 @@
     /*echo "Seus R$ ". number_format($real, 2, ",", ".") . " equivalem a USD ".  number_format($dolar, 2, ",","."); */
 
     // Formato profissional 
-    $padraobr = numfmt_create("pt-br", NumberFormatter::CURRENCY);
+    $padrao = numfmt_create("pt-br", NumberFormatter::CURRENCY);
 
-    echo "Seus ". numfmt_format_currency($padraobr, $real, "BRL") . " equivalem a ".  numfmt_format_currency($padraobr, $dolar, "USD");
+    echo "Seus ". numfmt_format_currency($padrao, $real, "BRL") . " equivalem a ".  numfmt_format_currency($padrao, $dolar, "USD");
 
 
 ?>
