@@ -23,7 +23,7 @@
     $dolar = $real/$cotação ;
     
     // mostrar o resultado
-    echo "Seus R/$". number_format($real, 2, ",", ".") . " equivalem a US/$".  number_format($dolar, 2, ",",".");
+    echo "Seus R$". number_format($real, 2, ",", ".") . " equivalem a USD".  number_format($dolar, 2, ",",".");
 
 ?>
 
