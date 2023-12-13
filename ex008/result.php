@@ -29,7 +29,7 @@
     // Biblioteca intl (internallization PHP)
     $padrao = numfmt_create("pt-br", NumberFormatter::CURRENCY);
 
-    echo "Seus ". numfmt_format_currency($padrao, $real, "BRL") . " equivalem a ".  numfmt_format_currency($padrao, $dolar, "USD");
+    echo "<p>Seus ". numfmt_format_currency($padrao, $real, "BRL") . " equivalem a <strong>".  numfmt_format_currency($padrao, $dolar, "USD")."</strong> </p>";
 
 
 ?>
