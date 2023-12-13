@@ -25,7 +25,8 @@
     // mostrar o resultado
     /*echo "Seus R$ ". number_format($real, 2, ",", ".") . " equivalem a USD ".  number_format($dolar, 2, ",","."); */
 
-    // Formato profissional 
+    // Formatação de moedas com internalização
+    // Biblioteca intl (internallization PHP)
     $padrao = numfmt_create("pt-br", NumberFormatter::CURRENCY);
 
     echo "Seus ". numfmt_format_currency($padrao, $real, "BRL") . " equivalem a ".  numfmt_format_currency($padrao, $dolar, "USD");
