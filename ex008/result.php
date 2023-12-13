@@ -17,7 +17,7 @@
 // cotação do google
     $cotação = 4.96;
 // quantos reais vc tem
-    $real = 1000;
+    $real = $_GET["nreais"] ?? 0;
 
 // quantos dolares vc tem.
     $dolar = $real/$cotação ;
