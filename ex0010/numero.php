@@ -17,6 +17,11 @@
 
     echo "<p> Analisando o Número <strong>". number_format($num, 3, ",",".") ."</strong> informado pelo usuario </p>";
     
+    $int = (int) $num;
+    //$fra = () $num;
+
+    echo "<ul><li> a parte inteira do numero é <strong>". number_format($int, 3, ",",".") ."</strong></li>";
+
     ?>
 
     <button onclick="javascript:history.go(-1)">Voltar</button> 
