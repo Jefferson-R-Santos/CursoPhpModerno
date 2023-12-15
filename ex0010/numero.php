@@ -18,9 +18,11 @@
     echo "<p> Analisando o Número <strong>". number_format($num, 3, ",",".") ."</strong> informado pelo usuario </p>";
     
     $int = (int) $num;
-    //$fra = () $num;
+    $fra = $num - $int;
 
-    echo "<ul><li> a parte inteira do numero é <strong>". number_format($int, 3, ",",".") ."</strong></li>";
+    echo "<ul><li> a parte inteira do numero é <strong>". number_format($int, 0, ",",".") ."</strong></li>";
+
+    echo "<li>A parte frácionária do número é <strong>".number_format($fra, 3, ",",".")."</strong></li></ul>";
 
     ?>
 
