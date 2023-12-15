@@ -31,7 +31,8 @@ $cotação = $dados["value"][0]["cotacaoCompra"];
 // quantos dolares vc tem.
     $dolar = $real/$cotação ;
     
-    // mostrar o resultado
+    // mostrar o resultado em number_format
+
     /*echo "Seus R$ ". number_format($real, 2, ",", ".") . " equivalem a USD ".  number_format($dolar, 2, ",","."); */
 
     // Formatação de moedas com internalização
@@ -39,10 +40,18 @@ $cotação = $dados["value"][0]["cotacaoCompra"];
     $padrao = numfmt_create("pt-br", NumberFormatter::CURRENCY);
 
     echo "<p>Seus ". numfmt_format_currency($padrao, $real, "BRL") . " equivalem a <strong>".  numfmt_format_currency($padrao, $dolar, "USD")."</strong> </p>";
-
+    echo '
+    <p>Está cotação está vindo diretamente do<span style="color: blue; cursor: pointer;" onclick="redirecionarParaSite()">Banco Central do Brasil</span>.</p>';
 
 ?>
 
+<script>
+function redirecionarParaSite() {
+    // Substitua 'http://www.exemplo.com' pelo URL real para o qual deseja redirecionar
+    var siteURL = 'https://www.bcb.gov.br/';
+    window.location.href = siteURL;
+}
+</script>
         <p><a href="javascript:history.go(-1)">Voltar</a></p>
      
      </form>
