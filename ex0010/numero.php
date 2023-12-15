@@ -15,7 +15,7 @@
     
     $num = $_POST["n"] ?? 0;
 
-    echo "<p> Analisando o Número $n passado </p>";
+    echo "<p> Analisando o Número $num informado pelo usuario </p>";
     
     ?>
 
