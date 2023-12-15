@@ -41,17 +41,10 @@ $cotação = $dados["value"][0]["cotacaoCompra"];
 
     echo "<p>Seus ". numfmt_format_currency($padrao, $real, "BRL") . " equivalem a <strong>".  numfmt_format_currency($padrao, $dolar, "USD")."</strong> </p>";
     echo '
-    <p>Está cotação está vindo diretamente do<span style="color: blue; cursor: pointer;" onclick="redirecionarParaSite()">Banco Central do Brasil</span>.</p>';
+    <p>Está cotação está vindo diretamente do <a href="https://www.bcb.gov.br/" target="_blank" style="color: blue;">Banco Central do Brasil</a>.</p>';
 
 ?>
 
-<script>
-function redirecionarParaSite() {
-    // Substitua 'http://www.exemplo.com' pelo URL real para o qual deseja redirecionar
-    var siteURL = 'https://www.bcb.gov.br/';
-    window.location.href = siteURL;
-}
-</script>
         <p><a href="javascript:history.go(-1)">Voltar</a></p>
      
      </form>
