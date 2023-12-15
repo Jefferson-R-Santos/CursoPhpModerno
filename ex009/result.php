@@ -14,8 +14,17 @@
 
         <h1>Valor Convertido</h1>
         <?php 
-// cotação do google
-    $cotação = 4.96;
+// cotação do Banco Central
+
+$inicio = date("m-d-Y", strtotime("-7 days"));
+$fim = date("m-d-Y");
+
+$url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\''. $inicio .'\'&@dataFinalCotacao=\''. $fim .'\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
+
+$dados = json_decode(file_get_contents($url), true);
+
+$cotacao = $dados["value"][0]["cotacaoCompra"];
+
 // quantos reais vc tem
     $real = $_GET["nreais"] ?? 0;
 
