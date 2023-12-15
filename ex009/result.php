@@ -41,7 +41,7 @@ $cotação = $dados["value"][0]["cotacaoCompra"];
 
     echo "<p>Seus ". numfmt_format_currency($padrao, $real, "BRL") . " equivalem a <strong>".  numfmt_format_currency($padrao, $dolar, "USD")."</strong> </p>";
     echo '
-    <p>Está cotação está vindo diretamente do <a href="https://www.bcb.gov.br/" target="_blank" style="color: blue;">Banco Central do Brasil</a>.</p>';
+    <p>Cotação obtida diretamente do <a href="https://www.bcb.gov.br/" target="_blank" style="color: black;">Banco Central do Brasil</a>.</p>';
 
 ?>
 
