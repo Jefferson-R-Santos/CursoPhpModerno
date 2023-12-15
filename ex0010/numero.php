@@ -15,7 +15,7 @@
     
     $num = $_POST["n"] ?? 0;
 
-    echo "<p> Analisando o Número $num informado pelo usuario </p>";
+    echo "<p> Analisando o Número <strong>". number_format($num, 3, ",",".") ."</strong> informado pelo usuario </p>";
     
     ?>
 
