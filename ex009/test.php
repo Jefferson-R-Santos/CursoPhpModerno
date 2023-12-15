@@ -7,7 +7,7 @@ $dados = json_decode(file_get_contents($url), true);
 
 var_dump($dados);
 
-$cotacao = ["value"][0]["cotacaoCompra"];
+$cotacao = $dados["value"][0]["cotacaoCompra"];
 
 echo "a cotação foi $cotacao"
 
