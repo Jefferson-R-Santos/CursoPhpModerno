@@ -23,7 +23,7 @@ $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDol
 
 $dados = json_decode(file_get_contents($url), true);
 
-$cotacao = $dados["value"][0]["cotacaoCompra"];
+$cotação = $dados["value"][0]["cotacaoCompra"];
 
 // quantos reais vc tem
     $real = $_GET["nreais"] ?? 0;
