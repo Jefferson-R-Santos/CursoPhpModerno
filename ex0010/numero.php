@@ -19,6 +19,8 @@
     
     ?>
 
+    <button onclick="javascript:history.go(-1)">Voltar</button> 
+
     </main>
 </body>
 </html>
