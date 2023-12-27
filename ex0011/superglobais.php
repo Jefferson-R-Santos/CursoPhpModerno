@@ -48,6 +48,10 @@
     echo "<h1><br>Super Global Server</h1>";
     var_dump($_SERVER);
 
+    //Pega o conteudo de todas as outras Globais
+    echo "<h1><br>Super Global Globals</h1>";
+    var_dump($GLOBALS);
+
     ?>
 </pre>
 
