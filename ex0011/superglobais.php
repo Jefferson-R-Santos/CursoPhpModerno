@@ -16,6 +16,9 @@
     echo "<h1>Super Global Get</h1>";
     var_dump($_GET);
 
+    echo "<h1><br>Super Global Post</h1>";
+    var_dump($_POST);
+
     ?>
 </pre>
 
