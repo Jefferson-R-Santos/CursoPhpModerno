@@ -15,7 +15,7 @@
     
     setcookie("dia-da-semana", "Segunda", time() + 3600);
     session_start();
-    $_SESSION["test"] = "Funcionou"
+    $_SESSION["test"] = "Funcionou";
 
     //Pega Dados pela URL
     echo "<h1>Super Global Get</h1>";
