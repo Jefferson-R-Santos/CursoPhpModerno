@@ -19,6 +19,9 @@
     echo "<h1><br>Super Global Post</h1>";
     var_dump($_POST);
 
+    echo "<h1><br>Super Global Request</h1>";
+    var_dump($_REQUEST);
+
     ?>
 </pre>
 
