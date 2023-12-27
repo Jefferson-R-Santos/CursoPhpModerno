@@ -40,9 +40,9 @@
     //Mostra as variaveis de ambiente
     echo "<h1><br>Super Global ENV</h1>";
     var_dump($_ENV);
-    foreach (getenv() as $c > $v) {
+    foreach (getenv() as $c => $v) {
         echo "<br> $c -> $v";
-    }
+    };
 
     //
     echo "<h1><br>Super Global Server</h1>";
