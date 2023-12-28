@@ -16,6 +16,8 @@
      $valor2 = $_GET["v2"]?? 0;
     ?>
 <main>
+    
+   <h1>Somador de Valores</h1>
     <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
 
     <label for="v1">Valor 1:</label>
@@ -29,5 +31,15 @@
     </form>
 </main>
     
+    <section id="resultado">
+
+    <h2>Resultado</h2>
+    <?php 
+    $soma = $valor1 + $valor2;
+    echo "<p>A soma entre $valor1 e $valor2 é igual á <strong> $soma </strong> </p>";
+    ?>
+
+    </section>
+
 </body>
 </html>
