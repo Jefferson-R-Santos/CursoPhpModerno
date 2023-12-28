@@ -36,7 +36,7 @@
     <h2>Resultado</h2>
     <?php 
     $soma = $valor1 + $valor2;
-    echo "<p>A soma entre $valor1 e $valor2 é igual á <strong> $soma </strong> </p>";
+    echo "<p>A soma entre $valor1 e $valor2 é igual a <strong> $soma </strong> </p>";
     ?>
 
     </section>
