@@ -28,6 +28,14 @@
     </main>
     <section>
         <h2>Estrutura da Divisão</h2>
+        <?php 
+        echo "<ul>";
+        echo "<li></li>";
+        echo "<li></li>";
+        echo "<li></li>";
+        echo "<li></li>";
+        echo "</ul>";
+        ?>
     </section>
 </body>
 </html>
