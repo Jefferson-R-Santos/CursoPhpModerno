@@ -16,7 +16,7 @@
     <main>
 
      <h1> Anatomia de uma Divisão </h1>
-     <form action="index.php" method="get">
+     <form action="" method="get">
         <label for="d1">Dividendo</label>
         <input type="number" name="d1" id="d1" min="0" value="<?= $dividendo ?>">
         <label for="d2">Divisor</label>
