@@ -16,11 +16,11 @@
     <main>
 
      <h1> Anatomia de uma Divisão </h1>
-     <form action="get">
+     <form action="" method="get">
         <label for="d1">Dividendo</label>
-        <input type="number" name="d1" id="d1" value="<?= $dividendo ?>">
+        <input type="number" name="d1" id="d1" min="0" value="<?= $dividendo ?>">
         <label for="d2">Divisor</label>
-        <input type="number" name="d2" id="d2" value="<?= $divisor ?>">
+        <input type="number" name="d2" id="d2" min="1" value="<?= $divisor ?>">
         <input type="submit" value="Analisar">
 
      </form>
@@ -29,11 +29,14 @@
     <section>
         <h2>Estrutura da Divisão</h2>
         <?php 
+
+        $quociente = intdiv($dividendo, $divisor);
+        $resto = $dividendo % $divisor;
         echo "<ul>";
-        echo "<li></li>";
-        echo "<li></li>";
-        echo "<li></li>";
-        echo "<li></li>";
+        echo "<li> Dividendo: $dividendo </li>";
+        echo "<li> Divisor: $divisor </li>";
+        echo "<li> Quociente: $quociente </li>";
+        echo "<li> Resto: $resto </li>";
         echo "</ul>";
         ?>
     </section>
