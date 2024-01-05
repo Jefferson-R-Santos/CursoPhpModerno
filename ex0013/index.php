@@ -40,8 +40,8 @@
                 <td> <?= $divisor ?> </td>
             </tr>
             <tr>
-                <td> <?= $quociente ?> </td>
                 <td> <?= $resto ?> </td>
+                <td> <?= $quociente ?> </td>
             </tr>
         </table>
     </section>
