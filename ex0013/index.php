@@ -34,7 +34,7 @@
         $resto = $dividendo % $divisor;
         ?>
 
-        <table>
+        <table class="divisao">
             <tr>
                 <td> <?= $dividendo ?> </td>
                 <td> <?= $divisor ?> </td>
