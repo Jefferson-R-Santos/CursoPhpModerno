@@ -32,13 +32,18 @@
 
         $quociente = intdiv($dividendo, $divisor);
         $resto = $dividendo % $divisor;
-        echo "<ul>";
-        echo "<li> Dividendo: $dividendo </li>";
-        echo "<li> Divisor: $divisor </li>";
-        echo "<li> Quociente: $quociente </li>";
-        echo "<li> Resto: $resto </li>";
-        echo "</ul>";
         ?>
+
+        <table>
+            <tr>
+                <td> <?= $dividendo ?> </td>
+                <td> <?= $divisor ?> </td>
+            </tr>
+            <tr>
+                <td> <?= $quociente ?> </td>
+                <td> <?= $resto ?> </td>
+            </tr>
+        </table>
     </section>
 </body>
 </html>
