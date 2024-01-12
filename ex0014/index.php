@@ -18,9 +18,9 @@ $ano = $_GET['ano']?? $atual;
 <main>
     <form action="<?= $_SERVER['PHP_SELF'] ?> " method="get">
     <label for="nasc"> Em que ano você nasceu?</label>
-    <input type="number" name="nasc" id="nasc" min="1900">
+    <input type="number" name="nasc" id="nasc" min="1900" max="<?=date("Y")?>">
     <label for="ano">Quer saber sua idade em qual ano? (Atualmente estamos em <?= date("Y") ?>)</label>
-    <input type="number" name="ano" id="ano" max="<?=date("Y")?>" value="<?= $ano ?>">
+    <input type="number" name="ano" id="ano" value="<?= $ano ?>">
     <input type="submit" value="Qual será minha idade?">
     </form>
 </main>
